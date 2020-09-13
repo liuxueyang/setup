@@ -30,13 +30,21 @@ cp -i .Xresources ~/
 # Tmux
 oh my tmux
 ```sh
+git clone git@liuxueyang-gitee:liuxueyang/oh-my-tmux.git ~/.tmux
+cd
+ln -s .tmux/.tmux.conf
+
 cd ~/fun/setup
 cp -i .tmux.conf.local ~/
 ```
 
 # Emacs
 ```sh
+touch ~/.emacs-custom.el
+
 git clone git@liuxueyang-gitee:liuxueyang/plis-emacs.d.git emacs.d
+
+mv emacs.d ~/.emacs.d
 ```
 
 # Programming Language Development Environments
@@ -46,27 +54,39 @@ git clone git@liuxueyang-gitee:liuxueyang/plis-emacs.d.git emacs.d
 1. Install a new version.
 2. configure proxy and turn on go mod:
 ```sh
-
+go env -w GOPROXY="https://goproxy.io,https://goproxy.cn,direct"
+go env -w GO111MODULE="on"
 ```
 3. install go tools (eg. language server):
 ```sh
-
+go get github.com/go/golang/x/tools/cmd/goimports
+go get github.com/golang/go/x/tools/...
+go get github.com/kisielk/errcheck
+go get github.com/rogpeppe/godef
+go get github.com/stamblerre/gocode
+go get golang.org/x/tools/cmd/goimports
+go get golang.org/x/tools/gopls@latest
 ```
 
 ## Rust
 1. Install rustup
 2. Use tuna mirror:
 ```sh
-
+echo 'export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup' >> ~/.bash_profile
+echo 'set -x RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup' >> ~/.config/fish/config.fish
 ```
 3. Install rust tools (eg. language server):
 ```sh
-
+rustup toolchain add nightly
+rustup component add rust-src
+rustup default nightly
+cargo +nightly install racer
 ```
 
 ## Python
 1. Install Python3
 2. Use tuna pip mirror:
 ```sh
-
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
