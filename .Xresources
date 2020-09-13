@@ -1,0 +1,119 @@
+! ------------------------------------------------------------------------------
+! Import Colour from ~/.xrdb
+! ------------------------------------------------------------------------------
+
+#include ".xrdb/color/nord"
+#include ".xrdb/rofi/nord"
+#include ".xrdb/dmenu/nord"
+! #include ".xrdb/fonts/tewi"
+! #include ".xrdb/fonts/mplus"
+#include ".xrdb/fonts/fantasque"
+
+! ------------------------------------------------------------------------------
+! URxvt configs
+! ------------------------------------------------------------------------------
+
+! URxvt.geometry: 		72x18
+URxvt.geometry: 		179x50
+! URxvt*letterSpace:      -1      ! 减小字体的间距
+URxvt.lineSpace: 		0
+URxvt*internalBorder:   24
+URxvt*externalBorder:   0
+URxvt*depth:            32
+URxvt*saveline:         2000
+URxvt*termName:         rxvt-256color
+URxvt*iso14755:         false
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:  false
+URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select
+URxvt.copyCommand:      xclip -i -selection clipboard
+URxvt.pasteCommand:     xclip -o -selection clipboard
+
+! URxvt.keysym.M-c:       perl:clipboard:copy
+! URxvt.keysym.M-v:       perl:clipboard:paste
+! URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
+
+URxvt.keysym.M-C-c:       perl:clipboard:copy
+URxvt.keysym.M-C-v:       perl:clipboard:paste
+! URxvt.keysym.S-C-v:     perl:clipboard:paste_escaped
+
+URxvt.keysym.M-Escape:  perl:keyboard-select:activate
+URxvt.keysym.Shift-Up:	command:\033]720;1\007
+URxvt.keysym.Shift-Down:command:\033]721;1\007
+URxvt.keysym.M-s:       perl:keyboard-select:search
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.urlLauncher:      firefox
+URxvt.underlineURLs:    true
+URxvt.urlButton:        1
+URxvt*buffered:         false          
+URxvt.urgentOnBell: 	True
+
+! ------------------------------------------------------------------------------
+! Xft Font Configuration
+! ------------------------------------------------------------------------------
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+                                                           
+Xcursor.theme: redglass
+
+! ==================================================
+! copied from my blog
+XTerm*scrollBar: off
+XTerm*rightScrollBar: on
+XTerm*title: XTerm
+
+! XTerm*font: 10x20
+! XTerm*faceName: Monaco
+XTerm*faceSize: 15
+XTerm*faceName: FantasqueSansMono Nerd Font Mono
+XTerm*renderFont: true
+
+XTerm*savelines: 4000
+Xterm*geometry: 120x40
+XTerm*background: black
+XTerm*foreground: white
+XTerm*colorMode:  on
+XTerm*dynamicColors:  on
+XTerm*underLine:  off
+XTerm*colorBDMode: on
+XTerm*colorBD: cyan
+XTerm*colorULMode:  on
+XTerm*colorUL: magenta
+XTerm*customization: -color
+XTerm*reverseWrap: true
+! XTerm*color0: #000000
+! XTerm*color1: #b21818
+! XTerm*color2: #18b218
+! XTerm*color3: #BE5F00
+! XTerm*color4: #6D85BA
+! XTerm*color5: #b218b2
+! XTerm*color6: #18b2b2
+! XTerm*color7: #b2b2b2
+! XTerm*color8: #686868
+! XTerm*color9: #FF5454
+! XTerm*color10: #54FF54
+! XTerm*color11: #FFFF54
+! XTerm*color12: #73A5FF
+! XTerm*color13: #FF54FF
+! XTerm*color14: #54FFFF
+! XTerm*color15: #FFFFFF
+
+! XTerm*metaSendsEscape: true
+! XTerm*termName: xterm-color
+
+! XTerm*VT100.Translations: #override \
+!     Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
+!     Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+!     Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+!     Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)
+
+! XTerm*ttyModes: erase ^?
+! XTerm*VT100*translations: #override \
+! 			 <Key>BackSpace: string(0x7f)
+! XTerm*backarrowKeyIsErase: true
+! ==================================================

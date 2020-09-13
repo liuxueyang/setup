@@ -1,0 +1,4 @@
+Host liuxueyang-gitee
+     HostName gitee.com
+     User git
+     IdentityFile ~/.ssh/gitee_liuxueyang
