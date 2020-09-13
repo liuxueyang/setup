@@ -43,6 +43,7 @@ go get golang.org/x/tools/cmd/goimports
 go get golang.org/x/tools/gopls@latest
 
 # Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo 'export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup' >> ~/.bash_profile
 echo 'set -x RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup' >> ~/.config/fish/config.fish
@@ -53,7 +54,10 @@ rustup default nightly
 cargo +nightly install racer
 
 # Python
+pip install --upgrade pip
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+sudo pip install --upgrade pip
 sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 echo "Cheers!\n\nBye!\n"

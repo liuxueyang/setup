@@ -71,10 +71,21 @@ go get golang.org/x/tools/gopls@latest
 ## Rust
 1. Install rustup
 2. Use tuna mirror:
+
+bash:
 ```sh
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo 'export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup' >> ~/.bash_profile
-echo 'set -x RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup' >> ~/.config/fish/config.fish
+cd ~/fun/setup/
+bash rust.sh
 ```
+
+fish config:
+```fish
+echo 'set -x RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup' >> ~/.config/fish/config.fish
+echo "set -x fish_user_paths $fish_user_paths $HOME/.cargo/bin" >> ~/.config/fish/config.fish
+```
+
 3. Install rust tools (eg. language server):
 ```sh
 rustup toolchain add nightly
@@ -87,6 +98,9 @@ cargo +nightly install racer
 1. Install Python3
 2. Use tuna pip mirror:
 ```sh
+pip install --upgrade pip
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+sudo pip install --upgrade pip
 sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
