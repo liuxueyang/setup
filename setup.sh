@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 cat ssh_config >> ~/.ssh/config
 
 # configure repository
@@ -24,10 +23,9 @@ cd ~/fun/setup
 cp -i .tmux.conf.local ~/
 
 # emacs
-touch ~/.emacs-custom.el
-
+cd ~/fun/setup
+cp -i .emacs-custom.el ~/.emacs-custom.el
 git clone git@liuxueyang-gitee:liuxueyang/plis-emacs.d.git emacs.d
-
 mv emacs.d ~/.emacs.d
 
 # Go
