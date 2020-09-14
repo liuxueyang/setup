@@ -134,5 +134,5 @@ git clone git@liuxueyang-gitee:liuxueyang/gopl.git
 
 ```sh
 mkdir -p ~/public_html
-git clone git@liuxueyang-gitee:liuxueyang/liuxueyang.github.io.git ~/public_html
+git clone git@liuxueyang-gitee:liuxueyang/liuxueyang.git ~/public_html
 ```
