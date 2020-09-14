@@ -104,3 +104,20 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 sudo pip install --upgrade pip
 sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
+# Projects
+
+## apue
+
+```sh
+cd ~/fun/
+git clone git@liuxueyang-gitee:liuxueyang/apue.git
+```
+
+## gopl
+
+```sh
+mkdir -p ~/go/src/gitee.com/liuxueyang/
+cd ~/go/src/gitee.com/liuxueyang/
+git clone git@liuxueyang-gitee:liuxueyang/gopl.git
+```
