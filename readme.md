@@ -121,3 +121,10 @@ mkdir -p ~/go/src/gitee.com/liuxueyang/
 cd ~/go/src/gitee.com/liuxueyang/
 git clone git@liuxueyang-gitee:liuxueyang/gopl.git
 ```
+
+## Personal blog
+
+```sh
+mkdir -p ~/public_html
+git clone git@liuxueyang-gitee:liuxueyang/liuxueyang.github.io.git ~/public_html
+```
