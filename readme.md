@@ -73,7 +73,7 @@ go get github.com/kisielk/errcheck
 go get github.com/rogpeppe/godef
 go get github.com/stamblerre/gocode
 go get golang.org/x/tools/cmd/goimports
-go get golang.org/x/tools/gopls@latest
+go get golang.org/x/tools/gopls
 ```
 
 ## Rust
