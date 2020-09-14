@@ -11,14 +11,22 @@ Host liuxueyang-gitee
      IdentityFile ~/.ssh/gitee_liuxueyang
 ```
 
+config user email and name:
+
+```config
+git config --global user.email "liuxueyang457@gmail.com"
+git config --global user.name "liuxueyang"
+```
+
 # Clone repository
 ```sh
 mkdir ~/fun/
 cd ~/fun/
 git clone git@liuxueyang-gitee:liuxueyang/setup.git
 cd setup
-git config --global user.email "liuxueyang457@gmail.com"
-git config --global user.name "liuxueyang"
+
+git config --local user.email "liuxueyang457@gmail.com"
+git config --local user.name "liuxueyang"
 ```
 
 # Xterm, URxvt
