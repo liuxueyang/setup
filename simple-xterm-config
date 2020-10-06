@@ -1,0 +1,10 @@
+! ...
+XTerm*loginShell:true
+XTerm*utf8SelectTypes:true
+XTerm*faceName:TrueType
+XTerm*faceSize:14
+XTerm*forcePackedFont:false
+XTerm*selectToClipboard:true
+XTerm*background:black
+XTerm*foreground:gray90
+

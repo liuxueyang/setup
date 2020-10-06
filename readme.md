@@ -21,7 +21,18 @@ git config --global user.email "liuxueyang457@gmail.com"
 git config --global user.name "liuxueyang"
 ```
 
-# Xterm, URxvt
+# XTerm
+
+minimal xterm configuration
+
+```
+cd ~/fun/setup
+cat simple-xterm-config >> ~/.Xresources
+```
+
+# Xresources
+
+**TODO**
 ```sh
 cd ~/fun/setup
 cp -i .Xresources ~/
