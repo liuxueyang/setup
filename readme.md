@@ -11,14 +11,22 @@ Host liuxueyang-gitee
      IdentityFile ~/.ssh/gitee_liuxueyang
 ```
 
+config user email and name:
+
+```config
+git config --global user.email "liuxueyang457@gmail.com"
+git config --global user.name "liuxueyang"
+```
+
 # Clone repository
 ```sh
 mkdir ~/fun/
 cd ~/fun/
 git clone git@liuxueyang-gitee:liuxueyang/setup.git
 cd setup
-git config --global user.email "liuxueyang457@gmail.com"
-git config --global user.name "liuxueyang"
+
+git config --local user.email "liuxueyang457@gmail.com"
+git config --local user.name "liuxueyang"
 ```
 
 # XTerm
@@ -76,7 +84,7 @@ go get github.com/kisielk/errcheck
 go get github.com/rogpeppe/godef
 go get github.com/stamblerre/gocode
 go get golang.org/x/tools/cmd/goimports
-go get golang.org/x/tools/gopls@latest
+go get golang.org/x/tools/gopls
 ```
 
 ## Rust
@@ -114,4 +122,28 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 sudo pip install --upgrade pip
 sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+# Projects
+
+## apue
+
+```sh
+cd ~/fun/
+git clone git@liuxueyang-gitee:liuxueyang/apue.git
+```
+
+## gopl
+
+```sh
+mkdir -p ~/go/src/gitee.com/liuxueyang/
+cd ~/go/src/gitee.com/liuxueyang/
+git clone git@liuxueyang-gitee:liuxueyang/gopl.git
+```
+
+## Personal blog
+
+```sh
+mkdir -p ~/public_html
+git clone git@liuxueyang-gitee:liuxueyang/liuxueyang.git ~/public_html
 ```
