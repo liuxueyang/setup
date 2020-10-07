@@ -67,6 +67,10 @@ git clone git@liuxueyang-gitee:liuxueyang/plis-emacs.d.git emacs.d
 mv emacs.d ~/.emacs.d
 ```
 
+# Eclipse
+
+[Eclipse Installer](https://www.eclipse.org/downloads/packages/)
+
 # Programming Language Development Environments
 
 ## Go
