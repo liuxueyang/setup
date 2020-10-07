@@ -36,6 +36,7 @@ minimal xterm configuration
 ```
 cd ~/fun/setup
 cat simple-xterm-config >> ~/.Xresources
+xrdb -merge ~/.Xresources
 ```
 
 # Xresources
