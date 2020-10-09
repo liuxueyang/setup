@@ -152,3 +152,10 @@ git clone git@liuxueyang-gitee:liuxueyang/gopl.git
 mkdir -p ~/public_html
 git clone git@liuxueyang-gitee:liuxueyang/liuxueyang.git ~/public_html
 ```
+
+## A little Java
+
+```sh
+cd ~/fun/
+git clone git@liuxueyang-gitee:liuxueyang/little-java.git
+```
