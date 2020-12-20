@@ -29,7 +29,19 @@ git config --local user.email "liuxueyang457@gmail.com"
 git config --local user.name "liuxueyang"
 ```
 
-# Xterm, URxvt
+# XTerm
+
+minimal xterm configuration
+
+```
+cd ~/fun/setup
+cat simple-xterm-config >> ~/.Xresources
+xrdb -merge ~/.Xresources
+```
+
+# Xresources
+
+**TODO**
 ```sh
 cd ~/fun/setup
 cp -i .Xresources ~/
@@ -54,6 +66,10 @@ git clone git@liuxueyang-gitee:liuxueyang/plis-emacs.d.git emacs.d
 
 mv emacs.d ~/.emacs.d
 ```
+
+# Eclipse
+
+[Eclipse Installer](https://www.eclipse.org/downloads/packages/)
 
 # Programming Language Development Environments
 
@@ -135,4 +151,11 @@ git clone git@liuxueyang-gitee:liuxueyang/gopl.git
 ```sh
 mkdir -p ~/public_html
 git clone git@liuxueyang-gitee:liuxueyang/liuxueyang.git ~/public_html
+```
+
+## A little Java
+
+```sh
+cd ~/fun/
+git clone git@liuxueyang-gitee:liuxueyang/little-java.git
 ```
