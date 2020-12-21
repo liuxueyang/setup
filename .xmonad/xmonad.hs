@@ -4,7 +4,7 @@ import XMonad.Wallpaper
 
 main = do
   -- randomly pick a wallpaper.
-  setRandomWallpaper ["$HOME/Pictures/wallpaper"]
+  setRandomWallpaper ["/home/algouage/Pictures/wallpaper"]
   xmonad desktopConfig
     {
       terminal = "alacritty"
