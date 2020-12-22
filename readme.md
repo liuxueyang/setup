@@ -162,6 +162,8 @@ git clone git@liuxueyang-gitee:liuxueyang/little-java.git
 
 # RCM
 
+[Guide](https://www.distrotube.com/blog/rcm-guide/)
+
 1. bootstrap
 ```sh
 cp new/rcrc ~/.rcrc
