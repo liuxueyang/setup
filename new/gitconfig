@@ -1,0 +1,14 @@
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    pl = pull --rebase
+    pr = pull --rebase
+    ps = push
+    dt = difftool
+    l = log --stat
+    cp = cherry-pick
+    ca = commit -a
+    b = branch
+[include]
+        path = ~/.gitconfig-private
