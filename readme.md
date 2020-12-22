@@ -159,3 +159,15 @@ git clone git@liuxueyang-gitee:liuxueyang/liuxueyang.git ~/public_html
 cd ~/fun/
 git clone git@liuxueyang-gitee:liuxueyang/little-java.git
 ```
+
+# RCM
+
+1. bootstrap
+```sh
+cp new/rcrc ~/.rcrc
+```
+2. install rcm
+3. install dot files
+```
+rcup -v
+```
