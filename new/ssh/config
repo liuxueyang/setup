@@ -1,14 +1,19 @@
 Include config-priate
 
-Host liuxueyang-gitee
-     HostName gitee.com
-     User git
-     IdentityFile ~/.ssh/gitee_liuxueyang
-
 Host liuxueyang-github
      HostName github.com
      User git
      IdentityFile ~/.ssh/github_liuxueyang
+
+Host liuxueyang-gitlab
+     HostName gitlab.com
+     User git
+     IdentityFile ~/.ssh/github_liuxueyang
+
+Host liuxueyang-gitee
+     HostName gitee.com
+     User git
+     IdentityFile ~/.ssh/gitee_liuxueyang
 
 Host raspberry
      HostName 192.168.1.111
